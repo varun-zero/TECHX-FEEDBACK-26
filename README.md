@@ -190,10 +190,8 @@ npm run start
 ## 🔒 Administrative Access
 
 - **Login Route**: `/admin/login`
-- **Default Username**: `vcet-nsdc`
-- **Default Password**: `AIDS@2025`
-
-*(Credentials can be configured via `.env.local` for production environments)*
+- **Credentials**: Configure `ADMIN_USERNAME`, `ADMIN_PASSWORD`, and
+  `ADMIN_SESSION_SECRET` in `.env.local`; no default credentials are provided.
 
 ---
 
