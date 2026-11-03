@@ -76,7 +76,7 @@ export function verifyAdminCredentials(username: string, password: string): bool
   const usernameOk = safeEqual(username.trim(), expectedUsername.trim());
   const passwordOk = expectedPasswordHash
     ? safeEqual(sha256(password), expectedPasswordHash.toLowerCase())
-    : safeEqual(password, expectedPassword);
+    : safeEqual(password, expectedPassword!);
 
   // Compare both sides even on failure to keep timing uniform.
   return usernameOk && passwordOk;
